@@ -29,7 +29,7 @@ This is the general repository for the Fund the Masses project.
 
 FundTheM is a poverty eradication organization committed in releasing families and communities from poverty. Our goal is to help keep families together by providing accessible funds for food, school and health needs through personalized or organizational donations.
 
-	FTM has a variety of programs for individuals who want to win the war against poverty in communities. We have personal fund donation, case sponsorship, and social impact campaigns. Through participation in any of these programs, communities reap life changing benefits that ranges from skill acquisition, education sponsorship, medical intervention and disaster management.
+FTM has a variety of programs for individuals who want to win the war against poverty in communities. We have personal fund donation, case sponsorship, and social impact campaigns. Through participation in any of these programs, communities reap life changing benefits that ranges from skill acquisition, education sponsorship, medical intervention and disaster management.
 
 
 
