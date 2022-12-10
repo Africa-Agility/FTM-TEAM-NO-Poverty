@@ -39,13 +39,13 @@ FTM has a variety of programs for individuals who want to win the war against po
 * ![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 * ![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 * ![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-* ![Node-js](https://img.shields.io/badge/Node-js-092E20?style=for-the-badge&logo=django&logoColor=white)
+* ![Node-js](https://img.shields.io/badge/Node-js-092E20?style=for-the-badge&logo=nodejs&logoColor=white)
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
 
-1. Clone the Project
+1. Clone the Project, open your terminal (`git clone https://github.com/Africa-Agility/FTM-TEAM-NO-Poverty.git`) 
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
