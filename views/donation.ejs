@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/donations.css">
+
+</head>
+<body>
+    <main>
+      <!--navigation bar section-->
+        <nav class="navbar navbar-expand-lg navbar-light px-5 py-3">
+            <div class="container-fluid mx-5">
+             <div class=" logo-part mt-3">
+              <div id="logo d-lg-flex">
+                <img src="img/Vector.png">
+              <a class="navbar-brand mt-3" id="brand" href="#">FUNDTHEM</a>
+              </div>
+            </div>
+            
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto me-5">
+                  <li class="nav-item me-4">
+                    <a class="nav-link active fw-normal" id="main-links" aria-current="page" href="#">HOME</a>
+                  </li>
+        
+                  <li class="nav-item ">
+                    <a class="nav-link" id="links" action="/about.ejs" method="get" href="#">ABOUT</a>
+                 </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" id="links" href="#">CAUSES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"id="links" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="links" href="#">CONTACT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal" id="main-links" href="#">DONATE</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="icon-avatar">
+                 <img src="Gift/Avatar.png"> 
+                 <i class="fa-light fa-bell"></i>
+              </div>
+            </div>
+          </nav>
+          <div class="card mb-3">
+            <div class="row g-0" style="background-color:rgba(253, 245, 247, 0.986);">
+              <div class="col-md-4" id="image">
+                <img src="img/Rectangle 1217.png" class="img-fluid rounded-start" alt="man holding a basket">
+              </div>
+              <div class="col-md-8 mt-5" id="whole">
+                <div class="card-body text-center mt-5">
+                  <h5 class="card-title pt-5" id="head">Gift/item Donation</h5>
+                  <p class="card-text"id="text">Change the world,one gift at a time. We are here to help you with your gift and donations to those who need it..</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second section-->
+          <div class="section2">
+              <div class="card-body text-center">
+                  <h5 class="card-title pt-5 " id="head">Donate items</h5>
+                  <p class="card-text" id="sec2">Select a category to get started</p>
+                </div>
+                <div class="row row-cols-1   mx-auto row-cols-md-3 g-3" style="width: 100%;">
+                    <div class="col" id="colum">
+                      <div class="card">
+                        <div class="card-body" >
+                          <h5 class="card-title" id="headie">Edibles</h5>
+                          <p class="card-text" id="cardie">You can donate edibles such as foodstuff, fruits etc. Things that can be consumed.
+                            We appreciate your thoughtfulness..</p>
+                          <p><a href="#">Donate</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" id="colum">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title" id="headie">Non-Edible</h5>
+                          <p class="card-text" id="cardie">We also accept non-edibles such as clothes, shoes, books. materials etc. This will help us in our outreaches..</p>
+                          <p><a href="#">Donate</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" id="colum">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title" id="headie">Fianancial</h5>
+                          <p class="card-text" id="cardie">we will need money to help us solve some problems, pay for fees and also help to create solution for some problems</p>
+                          <p><a href="#">Donate</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+          </div>
+          <!--third section-->
+          <div class="footer mx-auto mt-5 pt-5">
+            <div class="heart-icon mt-5 pt-5 d-flex justify-content-center">
+              <span><img src="Gift/fade.png"> </span>
+              <h2 id="foot-head">Gift and individual or Donate to an organization</h2>
+              <span><img src="Gift/fade.png"></span>
+            </div>
+              
+         
+            
+            <div class="row mx-auto mt-5 pt-5">
+              <div class="col-sm-6 mt-5">
+                <div class="card mt-5 "id="card1" >
+                  <div class="card-body" >
+                    <label for="deliver" id="form1">Deliver to our Address</label>
+                    <select class="form-select" aria-label="Default select example" id="selecform">
+                      <option selected>Select Location</option>
+                      <option value="1">Nigeria</option>
+                      <option value="2">Sudan</option>
+                      <option value="3">Kenya</option>
+                      <option vlaue="4">South Africa</option>
+                      <option value="5">Ghana</option>
+                      <option value="6">Zimbababwe</option>
+                    </select>
+                    <label for="pick" id="form1">Pick-up from our agents</label>
+                    <select class="form-select" aria-label="Default select example" id="selecform">
+                      <option selected>Select pick-up Location</option>
+                      <option value="1">Nigeria</option>
+                      <option value="2">Sudan</option>
+                      <option value="3">Kenya</option>
+                      <option vlaue="4">South Africa</option>
+                      <option value="5">Ghana</option>
+                      <option value="6">Zimbababwe</option>
+                    </select>
+                    <label for="transfer" id="form1">Transfer to our Account</label>
+                    <select class="form-select" aria-label="Default select example" id="selecform">
+                      <option selected>Select bank </option>
+                      <option value="1">Polaris</option>
+                      <option value="2">Firstbank</option>
+                      <option value="3">Guaranty trust bank</option>
+                      <option vlaue="4">Paypal</option>
+                      <option value="5">African bank</option>
+                      <option value="6">Everyday bank</option>
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6" >
+                <div class="card me-5" style="background-color:#F8FAFC;" >
+                  <div class="card-body" id="card2">
+                    <form>
+                      <div class="mb-3">
+                        <div class="mb-3">
+                         
+                          <input type="text" class="form-control" id="data" placeholder="Full Name">
+                        </div>
+                        <div class="mb-3">
+                        <input type="email" class="form-control" id="data" aria-describedby="emailHelp" placeholder="Your Email">
+                      </div>
+                       <div class="mb-3">
+                      <select class="form-select" aria-label="Default select example" id="data">
+                        <option selected>Select Organization  </option>
+                        <option value="1">Be the best.org</option>
+                        <option value="2">We are one</option>
+                        <option value="3">Save a life</option>
+                        <option vlaue="4">Saving children</option>
+                        <option value="5">Volunteers for you</option>
+                        <option value="6">cloth for everyone</option>
+                      </select>
+                      </div>
+                      <div class="mb-3">
+                      <select class="form-select" aria-label="Default select example" id="data">
+                        <option selected>Select Item Category  </option>
+                        <option value="1">Edible</option>
+                        <option value="2">Non-Edible</option>
+                        <option value="3">Fianancial</option>
+                      </select>
+                      </div>
+                      <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                      </div>
+                      <div class="endbtn">
+                        <button type="submit" class="btn text-center" id="end">Donate</button>
+                      </div>
+                      
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+</body>
+</html>
