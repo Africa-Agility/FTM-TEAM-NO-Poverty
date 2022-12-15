@@ -127,6 +127,10 @@ app.get('/about', (req, res) => {
     res.render('about.ejs')
 })
 
+app.get('/', (req, res) => {
+    res.render('home.ejs')
+})
+
 
 
 app.listen(PORT,() => {
