@@ -67,9 +67,9 @@ app.post('/form_data', function(req, res){
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-// app.get('/', (req, res) => {
-//     res.send("<button><a href='/auth'>Login With Google</a></button>")
-// });
+app.get('/', (req, res) => {
+    res.render("home.ejs")
+});
   
 // // Auth 
 // app.get('/auth' , passport.authenticate('google', { scope:
@@ -118,6 +118,15 @@ app.get('/password', (req, res) => {
 app.get('/verification', (req, res) => {
     res.render('verification.ejs')
 })
+
+app.get('/donation', (req, res) => {
+    res.render('donation.ejs')
+})
+
+app.get('/about', (req, res) => {
+    res.render('about.ejs')
+})
+
 
 
 app.listen(PORT,() => {
