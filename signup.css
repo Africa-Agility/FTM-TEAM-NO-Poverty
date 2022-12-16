@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Shadows+Into+Light+Two&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    background-color:#F8FAFC;
+       
+}
+/*Navigation part*/
+#logo{
+  
+  width:45px;
+  height:43.14px;
+  line-height: 29px;
+  
+}
+#brand{
+    width:203px;
+    height:72px;
+    font-family:'Inter';
+    font-weight:600;
+    font-size:24px;
+    color:#000000;
+    line-height:29px;
+
+    
+}
+
+#main-links{
+    font-weight:500;
+ 
+
+}
+#links, #main-links,#sign-confirm{
+    font-family:'Inter';
+    font-size:16px;
+    color:#18181B;
+    height:20px;
+    line-height:19px;
+
+
+}
+#links{
+    font-weight: 400;
+}
+
+/*Main section*/
+main div{
+    font-family: 'Inter';
+   
+}
+
+#image img{
+    margin-top: 8rem;
+}
+#form-part{
+   margin:auto;
+}
+#sign-confirm{
+    font-family: 'Inter';
+    letter-spacing: 0.02em;
+    line-height: 161%;
+}
+.title h2{
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: -2px;
+    color:#090914;
+}
+.title p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color:#52525B;
+}
+form .form-control{
+    background-color: #F8FAFC;
+    border:1px solid #CBD5E1;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:rgba(24,24,27,0.43);
+    height:60px;
+    padding:0 2rem;
+
+}
+form .form-label{
+    font-weight:500;
+    font-size: 16px;
+}
+.utton{
+    text-align: center;
+}
+button{
+    padding:16px;
+    gap:10px;
+    height:55px;
+    width:160px;
+    border:none;
+    border-radius: 9px;
+    background-color:#F74F22;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    font-family: 'Inter';
+    font-weight: 500;
+    color:#ffffff;
+
+
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+.divider-text p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+.icons{
+   text-align: center;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .fa-facebook{
+  color: #3b5998;
+  background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+  background-size: 55%;
+  background-position: 70% 0;
+  background-repeat: no-repeat;
+  }
+.ps-2{
+      color:#F74F22;
+  }
+  .terms p{
+    text-align: center;
+      color:#18181B;
+  }
+  /*password page*/
+ .section #head{
+     font-family: 'Shadows Into Light Two';
+     font-weight: 400;
+     font-size: 48px;
+     line-height:70px;
+     color:#FF9800;
+     padding:4rem 0;
+
+ }
+ .section{
+     font-family: 'inter';
+     font-weight: 400;
+     font-size: 32px;
+     line-height: 39px;
+     
+ }
+ .section #first{
+     font-family: 500;
+     color:rgba(0,0,0,0.87);
+ }
+ .section #second{
+     color:rgba(0,0,0,0.6);
+     padding:2rem 0;
+ }
+ .section #passwordinput{
+     border:none;
+     outline:0;
+     border-bottom: 1px solid #000000;
+     width:891px;
+     text-align: center;
+     margin:auto;
+     padding:2rem 0;
+    background-color:#F8FAFC;
+    
+ }
+ @media screen and (max-width: 600px) {
+    .section #passwordinput{
+      width:50%;
+
+    }
+    .section{
+        font-size:24px;
+    }
+  }
+
+ /*verification page part */
+ .veri input{
+     height:120px;
+     width:120px;
+     font-size: 32px;
+     line-height: 39px;
+     color:rgba(0,0,0,0.87);
+     box-sizing: border-box;
+     background:#FFFFFF;
+     border:1px solid rgba(0,0,0,0.14);
+     padding:2rem;
+ }
+ @media screen and (max-width: 600px) {
+    .veri input {
+      height:60px;
+      width:60px;
+    }
+  }

@@ -1,0 +1,430 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>personal cause</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="personal.css">
+    
+    </head>
+    <body>
+         <!--navigation bar section-->
+         <nav class="navbar navbar-expand-lg navbar-light px-5 py-3">
+            <div class="container-fluid mx-5">
+             <div class=" logo-part mt-3">
+              <div id="logo d-lg-flex">
+                <img src="images/Vector.png">
+              <a class="navbar-brand mt-3" id="brand" href="#">FUNDTHEM</a>
+              </div>
+            </div>
+            
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto me-5">
+                  <li class="nav-item me-4">
+                    <a class="nav-link active fw-normal" id="links" aria-current="page" href="#">HOME</a>
+                  </li>
+        
+                  <li class="nav-item ">
+                    <a class="nav-link" id="links" href="#">ABOUT</a>
+                 </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" id="links" href="#">CAUSES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"id="links" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="links" href="#">CONTACT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal" id="links" href="#">DONATE</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="icon-avatar">
+                 <img src="images/Avatar.png"> 
+                 <i class="fa-regular fa-bell"></i>
+              </div>
+            </div>
+          </nav>
+          <!--first section-->
+          <div class="first">
+              <h2>Personal Cause</h2>
+              <h6>Set up a cause</h6>
+              <div class="input-are d-flex">
+                <div class="input-group">
+                    <textarea class="form-control pt-5" id="mid" aria-label="With textarea" placeholder="write a message and additional placeholder"></textarea>
+                  </div>
+                  <div class="input-group">
+                      <input type="text" id="mid" placeholder="upload image or additional document">
+                  </div>
+              </div>
+
+              <div class="butt">
+                    <button >Sponsor</button>
+                  </div>
+              
+             
+          </div>
+         <div class="donations d-flex justify-content-between" id="wholedonations" style="width:60%;">
+             <!--donation funds-->
+             <div class="donation-fund">
+                <h3 id="hea">Donated Funds</h3>
+                <div class="body d-flex">
+                    <div class="one">
+                      <h6>Donation</h6>
+                      <p>Project fund a girl</p>
+                      <p>Help Adenifasa go to school</p>
+                      <p>Train 20 children</p>
+                      <p>We need you</p>
+                    </div>
+                    <div class="two"  id="two">
+                      <h6>Date</h6>
+                      <p>5-11-2022</p>
+                      <p>5-11-2022</p>
+                      <p>5-11-2022</p>
+                      <p>5-11-2022</p>
+                    </div>
+                    <div class="three" id="thre">
+                      <h6>Action</h6>
+                      <p><a href="#">Add</a></p>
+                      <p><a href="#">Add</a></p>
+                      <p><a href="#">Add</a></p>
+                      <p><a href="#">Add</a></p>
+                    </div>
+                </div>
+            </div>
+              <div class="track-don">
+                <!--track donations-->
+                <h3 id="hea">Track Donations</h3>
+                <div class="body d-flex">
+               <div class="week">
+                   <p>Last 7 days</p>
+                   <p>Last 14 days</p>
+                   <p>Last 30 days</p>
+                   <p>Last 3 months</p>
+                   <p>Last 12 months</p>
+                   <p>Select Time</p>
+                   <p>Custom</p>
+
+               </div>
+         <!--calender section-->
+      <div class="wrapper " style="min-width:50vw;">
+          <div class="center">
+           <div class="card">
+               <div class="calendar" id="calendarView">
+                   <div class="top-controls">
+                       <div class="month-control">
+                           <div class="custom-select-input">
+                               <div class="left-btn" onclick="prevMonth()"></div>
+                               <div class="selected-option">
+                                   <div class="option-list">
+                                       <div class="option">JANUARY</div>
+                                       <div class="option">FEBRUARY</div>
+                                       <div class="option">MARCH</div>
+                                       <div class="option">APRIL</div>
+                                       <div class="option">MAY</div>
+                                       <div class="option">JUNE</div>
+                                       <div class="option">JULY</div>
+                                       <div class="option">AUGUST</div>
+                                       <div class="option">SEPTEMBER</div>
+                                       <div class="option">OCTOBER</div>
+                                       <div class="option">NOVEMBER</div>
+                                       <div class="option">DECEMBER</div>
+                                   </div>
+                               </div>
+                               <div class="right-btn" onclick="nextMonth()"></div>
+                           </div>
+                       </div>
+                       <div class="year-control">
+                           <div class="custom-select-input">
+                               <div class="left-btn" onclick="prevYear()"></div>
+                               <div class="selected-option">
+                                   <div class="option-list">
+                                       <!-- Generated by JS -->
+                                   </div>
+                               </div>
+                               <div class="right-btn" onclick="nextYear()"></div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="week-name-group">
+                       <div class="week-name">MON</div>
+                       <div class="week-name">TUE</div>
+                       <div class="week-name">WED</div>
+                       <div class="week-name">THU</div>
+                       <div class="week-name">FRI</div>
+                       <div class="week-name">SAT</div>
+                       <div class="week-name">SUN</div>
+                       <div class="bottom-marker"></div>
+                   </div>
+                   <div class="date-panel">
+                       <div class="date-row">
+                           <div class="date">1</div>
+                           <div class="date">2</div>
+                           <div class="date">3</div>
+                           <div class="date">4</div>
+                           <div class="date">5</div>
+                           <div class="date">6</div>
+                           <div class="date">7</div>
+                       </div>
+                       <div class="date-row">
+                           <div class="date">2</div>
+                           <div class="date">3</div>
+                           <div class="date">4</div>
+                           <div class="date">5</div>
+                           <div class="date">6</div>
+                           <div class="date">7</div>
+                           <div class="date">8</div>
+                           <div class="date">9</div>
+                           <div class="date">10</div>
+                           <div class="date">11</div>
+                           <div class="date">12</div>
+                           <div class="date">13</div>
+                           <div class="date">14</div>
+                       </div>
+                       <div class="date-row">
+                           <div class="date">9</div>
+                           <div class="date">10</div>
+                           <div class="date">11</div>
+                           <div class="date">12</div>
+                           <div class="date">13</div>
+                           <div class="date">14</div>
+                           <div class="date">15</div>
+                           <div class="date">16</div>
+                           <div class="date">17</div>
+                           <div class="date">18</div>
+                           <div class="date">19</div>
+                           <div class="date">20</div>
+                           <div class="date">21</div>
+                       </div>
+                       <div class="date-row">
+                           <div class="date">16</div>
+                           <div class="date">17</div>
+                           <div class="date">18</div>
+                           <div class="date">19</div>
+                           <div class="date">20</div>
+                           <div class="date">21</div>
+                           <div class="date">22</div>
+                           <div class="date">23</div>
+                           <div class="date">24</div>
+                           <div class="date">25</div>
+                           <div class="date">26</div>
+                           <div class="date">27</div>
+                           <div class="date">28</div>
+                       </div>
+                       <div class="date-row">
+                           <div class="date">23</div>
+                           <div class="date">24</div>
+                           <div class="date">25</div>
+                           <div class="date">26</div>
+                           <div class="date">27</div>
+                           <div class="date">28</div>
+                           <div class="date d29">29</div>
+                           <div class="date d30">30</div>
+                           <div class="date d31">31</div>
+                       </div>
+                       <div class="date-row">
+                           <div class="date d30">30</div>
+                           <div class="date d31">31</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="calender-btn d-flex justify-content-around">
+                   <button id="cancel">cancel</button>
+                   <button id="apply">Apply</button>
+               </div>
+           </div>
+       </div>
+       </div>
+
+        </div>
+        </div>
+        </div>
+      
+         </div>
+         <!--causes section-->
+         <div class="third">
+           <h3 id="hea">My Causes </h3> 
+         
+         <div class="causes d-flex justify-content-around">
+             <div class="body-cause">
+                <h3 id="good">Causes</h3>
+                <div class="para d-flex justify-content-between">
+                    <p>Funds for Kidney transplant</p>
+                    <a href="#">view</a>
+                </div>
+                <div class="para d-flex">
+                    <p>Funds for Kidney transplant</p>
+                    <a href="#">view</a>
+                </div>
+                <div class="para d-flex">
+                    <p>Funds for Kidney transplant</p>
+                    <a href="#">view</a>
+                </div>
+                <div class="para d-flex">
+                    <p>Funds for Kidney transplant</p>
+                    <a href="#">view</a>
+                </div>
+                <div class="para d-flex">
+                    <p>Funds for Kidney transplant</p>
+                    <a href="#">view</a>
+                </div>
+                <div class="para d-flex">
+                    <p>Funds for Kidney transplant</p>
+                    <a href="#">view</a>
+                </div>
+
+                
+             </div>
+             <div class="body-cause">
+                 <h3 id="good">No of donations</h3>
+                 <p>100 donations</p>
+                 <p>100 donations</p>
+                 <p>100 donations</p>
+                 <p>100 donations</p>
+                 <p>100 donations</p>
+                 <p>100 donations</p>
+                 <p>100 donations</p>
+             </div>
+             <div class="body-cause">
+                 <h3 id="good">Amount</h3>
+                 <p>$10,000</p>
+                 <p>$10,000</p>
+                 <p>$10,000</p>
+                 <p>$10,000</p>
+                 <p>$10,000</p>
+                 <p>$10,000</p>
+             </div>
+             <div class="body-cause">
+                <h3 id="good">Action</h3> 
+                <div class="para d-flex">
+                    <a href="#">Extend</a>
+                    <button>End</button>
+                </div>
+                <div class="para d-flex">
+                    <a href="#">Extend</a>
+                    <button>End</button>
+                </div>
+                <div class="para d-flex">
+                    <a href="#">Extend</a>
+                    <button>End</button>
+                </div>
+                <div class="para d-flex">
+                    <a href="#">Extend</a>
+                    <button>End</button>
+                </div>
+                <div class="para d-flex">
+                    <a href="#">Extend</a>
+                    <button>End</button>
+                </div>
+                <div class="para d-flex">
+                    <a href="#">Extend</a>
+                    <button>End</button>
+                </div>
+             </div>
+         </div>
+         </div>
+         <!--footer-->
+         <footer>
+            <div class="card" id="whole-foot">
+              
+              <div class="card-body mx-auto" id="foot" style="width:80%;">
+                <h5 class="card-title text-center">Subscribe to our newsletter</h5>
+                <div class="tinput d-flex justify-content-center" >
+                   
+                  <input type="text" class="form-control me-4" id="data2" placeholder="Full Name">
+                  <input type="email" class="form-control me-4" id="data2" aria-describedby="emailHelp" placeholder="Email address" >
+                  <a href="#" class="btn btn-primary" id="sub">Subscribe Now</a>
+                </div>
+              </div>
+            </div>
+            <!--last part-->
+              <div class="cards d-flex justify-content-around" id="last">
+                <div class="bodyfoot">
+                  <div class="foot-icon d-flex">
+                    <img src="images/Vector.png">
+                    <h3 id="fundfoot">FUNDTHEM</h3>
+                  </div>
+                  <p>FundtheM aims to join the course to eradicate poverty and build skills.</p>
+                  <div class="foot-icon d-flex">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(+123)-4567890</p>
+                  </div>
+                  <div class="foot-icon d-flex">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>fundthem@gmail.com</p>
+                 </div>
+                 <div class="foot-icon d-flex">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+
+              </div>
+             
+             <div class="bodyfoot">
+              <div class="foot-log">
+                <h3 id="foothead">Company</h3>
+                <p>About </p>         
+
+                <p>Help a Family</p>       
+                  
+                  <p>Support a Child</p>        
+                  
+                 <p>Skill Acquisition</p> 
+                  
+                 <p> Personal Cause</p>
+              </div>
+            </div>
+            <div class="bodyfoot">
+              <div class="foot-log">
+                <h3 id="foothead">Help</h3>
+                <p>Customer Support</p>
+
+                 <p>FAQ</p> 
+                  
+                  <p>Terms & Conditions</p>
+                  
+                  <p>Privacy Policy</p>
+              </div>
+            </div>
+            <div class="bodyfoot">
+              <div class="foot-log">
+                <h3 id="foothead">OTHERS</h3>
+                <p>Sign </p>
+
+                 <p>Profile</p> 
+                  
+                  <p>Blog</p>
+                  
+                  <p>Settings</p>
+                  <p>Log Out</p>
+              </div>
+            </div>
+          </div>
+             <p id="endfoot" class="text-center"style="background-color: #1e1e1e;"><a href="#">© Copyright 2022, All Rights Reserved by FundtheM</a></p>
+              </div>
+              
+                 
+          
+             
+              
+               
+           </footer>  
+              
+       
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="personal.js"></script>
+    </body>
+    </html> 
+    

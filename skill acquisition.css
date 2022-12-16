@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Shadows+Into+Light+Two&display=swap');
+*{
+    padding:0;
+    margin:0;
+   
+}
+
+/*NAVBAR*/
+.header {
+    background-color: var(--background);
+    margin: 5px 10;
+    position: absolute;
+    width: 1600px;
+    min-height: 100%;
+    left: 0px;
+    top: 0px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem 7%;
+  
+   }
+ 
+   .navbar span{
+    font-weight: 700;
+    font-size: 1.85rem;
+  }
+  .navbar span:hover{
+    cursor: pointer;
+    color: var(--primary);
+  }
+  .navbar ul{
+    display: flex;
+    gap: 1.7rem;
+  }
+  .nav-links{
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 500;
+    color: var(--text);
+    line-height: 19.36px;
+  }
+  .nav-links:hover{
+    color: var(--secondary);
+  }
+  
+  .nav-links button{
+    background-color: var(--primary);
+    color: var(--primary);
+    padding: 0.6rem 1.4rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .navbar button:hover{
+    background-color: var(--secondary);
+    border-color: var(--primary);
+    box-shadow: var(--secondary);
+  }
+  .active{
+    color: var(--primary);
+  }
+ 
+  .vector{
+ position: absolute;
+ left: 6.12%;
+ right: 91.06%;
+ top: 3.18%;
+ bottom: 92.1%;
+  }
+  
+  .span{
+   font-size: 24px;
+   font-weight: 600;
+   font-family: 'Inter';
+   color: #1E1E1E;
+   line-height: 29.05px;
+  }
+
+  #colum{
+    
+    width:402px;
+    height:276;
+    margin:2rem 1rem;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.15);
+}
+#headie{
+    font-family: 'Inter';
+    font-weight:600;
+    font-size: 16px;
+    line-height: 28px;
+    color:#F74F22
+}
+#cardie{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    color:#5D5F6D;
+}
+p a{
+    text-decoration: none;
+    font-family: 'Shadows Into Light Two';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color:#F74F22;
+    margin: 3rem 0;
+}
+/*footer section*/
+
+#foot-head{
+    font-family:'Shadows Into Light Two';
+    font-weight: 400;
+    font-size: 40px;
+    color:#1E1E1E;
+}
+
+#card1{
+    width:423px;
+   
+    background-color:rgba(30,30,30,0.69);
+    border-radius: 5px;
+    text-align: center;
+}
+
+  /*The footer*/
+  #whole-foot{
+    background-color: #1E1E1E;
+  }
+  #foot{
+    background-color: #F74F22;
+    border-radius:20px;
+    margin: 4rem 0;
+  
+  }
+  #whole-foot h5{
+    font-family:'Shadows Into Light Two';
+    font-weight: 400;
+    font-size: 42px;
+    color:#f8fafc;
+    padding:2rem 0;
+  
+  }
+  #data2{
+    padding:17px 16px 17px 20px;
+    gap:1.5rem;
+    width:270px;
+    height:59.54px;
+    background-color: #F74F22;
+    border:1px solid #D4D4D8;
+    border-radius: 5px;
+  
+  }
+  #sub{
+    padding:16px;
+    gap:10px;
+    background-color:rgba(30,30,30,0.77);
+    border-radius:9px;
+  }
+  /*last part*/
+  #last{
+    background-color:#1E1E1E;
+  }
+
+  #fundfoot{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    color:#FAFAFA;
+  }
+  .bodyfoot p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color:#FAFAFA;
+  }
+  .foot-icon i{
+    color: #F74F22;
+    padding:2px 4px;
+  }
+  #foothead{
+    font-family: 'Inter';
+    font-family: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:#F74F22;
+  }
+  #endfoot a{
+    color:#f8fafc;
+    text-decoration: none;
+    padding-top:2rem;
+  }

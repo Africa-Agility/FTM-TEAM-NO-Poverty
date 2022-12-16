@@ -53,5 +53,9 @@ FTM has a variety of programs for individuals who want to win the war against po
 
 <!-- Collaborators -->
 ## Collaborators
-<<<<<<< HEAD
+
   #### Elizabeth Ogunmola - Backend developer
+  #### Faith Mwale - Frontend Developer
+  #### Fenny Ongala - Frontend developer
+  #### Aishah Salaudeen - Backend Developer
+  #### Ibukunoluwa Awotoye - Backend Developer

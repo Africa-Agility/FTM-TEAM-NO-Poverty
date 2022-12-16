@@ -7,8 +7,9 @@ const PORT = 7000;
 var bodyParser=require("body-parser");
 const mongoose = require('mongoose');
 const ejs = require('ejs');
+const authRoutes =  require('./routes/authRoutes');
 
-const uri = "mongodb+srv://UserDB:Nopoverty2022@no-poverty.phgzhfx.mongodb.net/?retryWrites=true&w=majority"
+const uri = "mongodb+srv://SGD1:Nopoverty2022@no-poverty.qqcm2tl.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose.set('strictQuery', true);
 mongoose.connect(uri);
@@ -25,15 +26,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
   
-
-// const UserRouter = require('./api/User')
-
-// // for accepting post from data
-// const bodyParser = require('express').json;
-// app.use(bodyParser());
-
-// app.use('/user', UserRouter)
-
+app.use(authRoutes);
 app.use(express.static('public'));
 
 // signup Form
@@ -54,6 +47,15 @@ app.post('/form_data', function(req, res){
               
     });
 })
+
+
+// const UserRouter = require('./api/User')
+
+// // for accepting post from data
+// const bodyParser = require('express').json;
+// app.use(bodyParser());
+
+// app.use('/user', UserRouter)
 
 // // passport -Google authentication
 // const passport = require('passport');

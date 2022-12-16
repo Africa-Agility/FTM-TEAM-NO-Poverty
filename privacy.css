@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Shadows+Into+Light+Two&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 90vw;
+    height: 100vh;
+}
+h3{
+    font-family: 'Shadows Into Light Two';
+    color: #FFAB00;
+}
+ .secA{
+    width:100% ;
+    background-color: #dac59d;
+    height: 20%;
+}
+.secA .card{
+    background-color: #FF9800;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+ p{
+    font-family: 'Inter';
+    width: 100%;
+}
+.secB{
+    width: 80vw;
+}
+.secB .card{
+    border: none;
+    width: 100%;
+}
