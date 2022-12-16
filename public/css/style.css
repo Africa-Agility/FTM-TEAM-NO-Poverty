@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;500&family=Open+Sans:wght@300&display=swap');
- @import "../node_modules/bootstrap/scss/bootstrap";
 
 :root {
 --primary: #F74F22;
@@ -18,6 +17,41 @@ body{
    overflow-x: hidden;
    min-height: 100%;
    font-family: 'Inter',Shadows Into Light Two;
+}
+/*carosel section*/
+/* carosel styling*/
+#imo{
+  height:80vh;
+}
+.last:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  
+}
+#hel{
+    font-family:'Shadows Into Light Two';
+    font-weight:400;
+    font-size: 34px;
+    color:#fafafa;
+
+}
+#ge{
+    font-family: 'Inter';
+    font-size:58px;
+    color:#fafafa;
+}
+#caro{
+    width:246px;
+    height:72px;
+    background-color: #f74f22;
+    border:1px solid #f74f22;
+    box-shadow:0px 1px 2px rgba(16,24 40,0.05);
+    border-radius:8px;
 }
 
 /**about section**/
@@ -174,10 +208,6 @@ margin: auto;
 }
 
 
-#logo{
-  
-}
-
 a{
    text-decoration: none;
  }
@@ -314,15 +344,6 @@ bottom: 92.1%;
   font-size: 34px;
   line-height: 49px;
  }
-/*.grid-box .img-wrap{
-  position: absolute;
-width: 595px;
-height: 486px;
-left: 65px;
-top: 304px;
-
-background:;
-}*/
 
  @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -334,34 +355,74 @@ background:;
     top: 0;
   }
 }
-   /* .navbar-default {
-    background-color: #fff;
-    border-color: #fff;
-    }
-    .brand-name {
-    font-family: inter;
-    font-size: 47px;
-    font-weight: bold;
-    color: #444;
-    text-decoration: none;
-    }
-    
-    .nav-container {
-    padding-top: 8px;
-    }
-    
-    .navbar-custom {
-    font-size: 20px;
-    background-color: #FFF;
-    
-    }*/
+}
+   
+  /*The footer*/
+#whole-foot{
+  background-color: #1E1E1E;
+}
+#foot{
+  background-color: #F74F22;
+  border-radius:20px;
+  margin: 4rem 0;
 
-    #page-footer{
-   position: absolute;
-   width: 1600px;
-   min-height: 913px;
-   margin: auto;
-   text-align: center;
-   background-color: var(--text);
+}
+#whole-foot h5{
+  font-family:'Shadows Into Light Two';
+  font-weight: 400;
+  font-size: 42px;
+  color:#f8fafc;
+  padding:2rem 0;
 
-    }
+}
+#data2{
+  padding:17px 16px 17px 20px;
+  gap:1.5rem;
+  width:270px;
+  height:59.54px;
+  background-color: #F74F22;
+  border:1px solid #D4D4D8;
+  border-radius: 5px;
+
+}
+#sub{
+  padding:16px;
+  gap:10px;
+  background-color:rgba(30,30,30,0.77);
+  border-radius:9px;
+}
+/*last part*/
+#last{
+  background-color:#1E1E1E;
+
+}
+#fundfoot{
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  color:#FAFAFA;
+}
+.bodyfoot p{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  color:#FAFAFA;
+}
+.foot-icon i{
+  color: #F74F22;
+  padding:2px 4px;
+}
+#foothead{
+  font-family: 'Inter';
+  font-family: 600;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color:#F74F22;
+}
+#endfoot a{
+  color:#f8fafc;
+  text-decoration: none;
+  padding-top:2rem;
+}
