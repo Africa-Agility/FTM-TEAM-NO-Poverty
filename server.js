@@ -1,52 +1,55 @@
-// mongodb
-// require('./config/db');
+//mongodb
+require('./config/db');
 
 const express = require('express');
-const app = express();
-const PORT = 7000;
-var bodyParser=require("body-parser");
 const mongoose = require('mongoose');
+const app = express();
+const PORT = 8080;
+var bodyParser = require("body-parser");
+// const mongoose = require('mongoose');
 const ejs = require('ejs');
 const authRoutes =  require('./routes/authRoutes');
+app.use(express.json());
 
-const uri = "mongodb+srv://SGD1:Nopoverty2022@no-poverty.qqcm2tl.mongodb.net/?retryWrites=true&w=majority"
+// const uri = "mongodb+srv://SGD1:Nopoverty2022@no-poverty.qqcm2tl.mongodb.net/?retryWrites=true&w=majority"
 
-mongoose.set('strictQuery', true);
-mongoose.connect(uri);
-var db=mongoose.connection;
-db.on('error', console.log.bind(console, "connection error"));
-db.once('open', function(callback){
-    console.log("connection succeeded");
-})
+// mongoose.set('strictQuery', true);
+// mongoose.connect(uri);
+// var db=mongoose.connection;
+// db.on('error', console.log.bind(console, "connection error"));
+// db.once('open', function(callback){
+//     console.log("connection succeeded");
+// })
   
   
-app.use(bodyParser.json());
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+// app.use(bodyParser.json());
+// app.use(express.static('public'));
+// app.use(bodyParser.urlencoded({
+//     extended: true
+// }));
   
 app.use(authRoutes);
 app.use(express.static('public'));
 
+
 // signup Form
-app.post('/form_data', function(req, res){
-    var name = req.body.name;
-    var email = req.body.email;
-    var password = req.body.password;
+// app.post('/form_data', function(req, res){
+//     var name = req.body.name;
+//     var email = req.body.email;
+//     var password = req.body.password;
 
-    var data ={
-        "name": name,
-        "email": email,
-        "password": password,
-    }
+//     var data ={
+//         "name": name,
+//         "email": email,
+//         "password": password,
+//     }
 
-    db.collection('details').insertOne(data,function(err, collection){
-        if (err) throw err;
-        console.log("Record inserted Successfully");
+//     db.collection('details').insertOne(data,function(err, collection){
+//         if (err) throw err;
+//         console.log("Record inserted Successfully");
               
-    });
-})
+//     });
+// })
 
 
 // const UserRouter = require('./api/User')
@@ -69,9 +72,9 @@ app.post('/form_data', function(req, res){
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-app.get('/', (req, res) => {
-    res.render("home.ejs")
-});
+// app.get('/', (req, res) => {
+//     res.render("home.ejs")
+// });
   
 // // Auth 
 // app.get('/auth' , passport.authenticate('google', { scope:
@@ -101,9 +104,17 @@ app.use('/css', express.static(__dirname +'public/css'))
 app.use('/js', express.static(__dirname +'public/js'))
 app.use('/img', express.static(__dirname +'public/img'))
 
+// routes
+app.get('/', (req, res) => res.render('home'))
+
 //Set Views
 app.set('views', './views')
 app.set('view engine', 'ejs')
+
+app.get('/', (req, res) =>{
+    res.render('home.ejs')
+
+})
 
 app.get('/signup', (req, res) => {
     res.render('signup.ejs')
@@ -129,9 +140,7 @@ app.get('/about', (req, res) => {
     res.render('about.ejs')
 })
 
-app.get('/', (req, res) => {
-    res.render('home.ejs')
-})
+
 
 
 
