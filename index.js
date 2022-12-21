@@ -1,5 +1,5 @@
 //mongodb
-require('./config/db');
+require('../../config/db');
 
 const express = require('express');
 const mongoose = require('mongoose');
