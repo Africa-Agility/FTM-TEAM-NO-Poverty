@@ -4,7 +4,7 @@ require('./config/db');
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const PORT =process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const product = require('./api/product');
 var bodyParser = require("body-parser");
 // const mongoose = require('mongoose');
