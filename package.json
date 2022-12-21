@@ -1,13 +1,14 @@
 {
-  "name": "server.js",
+  "name": "index.js",
   "version": "1.0.0",
   "description": "This is the general repository for the Fund the Masses project.",
   "main": "index.js",
   "engines": {
-    "node":"14.x"
+    "node": "14.x"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,9 @@
     "passport": "^0.6.0",
     "passport-google-oauth2": "^0.2.0",
     "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
