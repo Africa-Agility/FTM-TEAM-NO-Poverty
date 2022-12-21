@@ -4,11 +4,13 @@ require('./config/db');
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const PORT = 8080;
+const PORT =process.env.PORT || 8080;
+const product = require('./api/product');
 var bodyParser = require("body-parser");
 // const mongoose = require('mongoose');
 const ejs = require('ejs');
 const authRoutes =  require('./routes/authRoutes');
+// app.use("/api/product", product);
 app.use(express.json());
 
 // const uri = "mongodb+srv://SGD1:Nopoverty2022@no-poverty.qqcm2tl.mongodb.net/?retryWrites=true&w=majority"
@@ -30,6 +32,7 @@ app.use(express.json());
   
 app.use(authRoutes);
 app.use(express.static('public'));
+
 
 
 // signup Form
@@ -139,6 +142,39 @@ app.get('/donation', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about.ejs')
 })
+
+app.get('/contact', (req, res) => {
+    res.render('contact.ejs')
+})
+
+app.get('/privacy', (req, res) => {
+    res.render('privacy.ejs')
+})
+
+app.get('/skill', (req, res) => {
+    res.render('skill acqusition.ejs')
+})
+
+app.get('/sponsorchild', (req, res) => {
+    res.render('sponsor child.ejs')
+})
+
+app.get('/sponsorfam', (req, res) => {
+    res.render('sponsor fam.ejs')
+})
+
+app.get('/blog', (req, res) => {
+    res.render('blog.ejs')
+})
+
+app.get('/percause', (req, res) => {
+    res.render('pers cause.ejs')
+})
+
+app.get('/personal', (req, res) => {
+    res.render('personal.ejs')
+})
+
 
 
 
