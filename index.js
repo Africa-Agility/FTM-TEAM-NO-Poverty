@@ -1,5 +1,6 @@
 //mongodb
-require('./config/db');
+require('dotenv').config();
+
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -12,7 +13,6 @@ const ejs = require('ejs');
 const authRoutes =  require('./routes/authRoutes');
 // app.use("/api/product", product);
 app.use(express.json());
-
 // const uri = "mongodb+srv://SGD1:Nopoverty2022@no-poverty.qqcm2tl.mongodb.net/?retryWrites=true&w=majority"
 
 // mongoose.set('strictQuery', true);
@@ -102,6 +102,19 @@ app.use(express.static('public'));
 // app.get('/auth/callback/failure' , (req , res) => {
 //     res.send("Error");
 // })
+
+
+
+mongoose.set('strictQuery', true);
+mongoose
+.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(() => {
+    console.log("DB Connected");
+}) 
+.catch((err) => console.log(err));
 
 app.use('/css', express.static(__dirname +'public/css'))
 app.use('/js', express.static(__dirname +'public/js'))
