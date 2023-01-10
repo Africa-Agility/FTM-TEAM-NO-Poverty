@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This is the general repository for the Fund the Masses project.",
   "main": "index.js",
- 
   "scripts": {
     "start": "nodemon index.js",
     "build": "webpack --config webpack.config.js"
