@@ -12,7 +12,7 @@ const userSchema = new Schema({
         required: [true, 'Please enter an email'],
         unique: true,
         lowercase: true,
-        validate: [isEmail, 'Enter a valid email']
+        validate: [isEmail, 'Please enter a valid email']
     },
     password:{
         type: String,

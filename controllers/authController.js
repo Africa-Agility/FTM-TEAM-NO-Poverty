@@ -1,5 +1,10 @@
 const User = require('../models/User');
 
+// handle errors
+const handleErrors =(err) => {
+    console.log(err.message, err.code);
+}
+
 
 module.exports.signup_get = (req, res) => {
     res.render('signup');
